@@ -1,1 +1,41 @@
-﻿
+﻿body {
+    background-color: gray;
+    font-family: 'Museo Sans Cyrl 900';
+}
+
+.container {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__top-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 57px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img {
+    width: 86px;
+    height: 84px;
+}
+
+.header__logo-text {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.header__phone {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
