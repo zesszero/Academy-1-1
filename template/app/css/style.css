@@ -23,7 +23,6 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 25px 57px;
-    
 }
 
 .header__logo {
@@ -43,15 +42,29 @@ a {
 }
 
 .header__phone {
+    display: flex;
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
+    
+}
+
+.header__phone::before {
+    content:"";
+    background: url(../img/phone-icon.png) no-repeat;
+    background-size: cover;
+    height: 18px;
+    width: 17px;
+    display: block;
+    margin-right: 15px;
+
 }
 
 .top-menu {
     height: 94px;
+    padding-bottom: 14px;
 }
 
 .top-menu__list {
@@ -69,6 +82,24 @@ a {
     line-height: 23px;
     color: #000000;
     background-color: #ffffff;
+}
+
+.top-menu__item:hover,
+.top-menu__item_active {
+    background-color: #ee700e;
+    color: #ffffff;
+}
+
+.top-menu__item::after {
+    content: "";
+    display: block;
+    height: 14px;
+    width: 100%;
+}
+
+.top-menu__item:hover.top-menu__item::after,
+.top-menu__item_active::after {
+    background-color: #ee700e;
 }
 
 .top-menu__link {
