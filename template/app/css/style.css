@@ -221,6 +221,7 @@ h1 {
     font-family: "Museo Sans Cyrl 500", sans-serif;
     color: #727272;
     cursor: pointer;
+    border-radius: 3px;
 
 
 } 
@@ -228,3 +229,44 @@ h1 {
     background-color: #ee700e;
     color: #eaece7;
 }  
+
+
+.section__title {
+    display:flex;
+    justify-content: center;
+    height: 34px;
+    font-family: "Museo Sans Cyrl 900", sans-serif;
+    line-height: 23px;
+    padding-top: 76px;
+    font-size: 36px;
+ 
+}
+
+
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 87px;
+
+   
+}
+
+.service {
+    max-width: 275px;
+    width: 100%;
+    padding: 0 55px 45px;
+}
+.service__logo {
+    width: 41px;
+    height: 40px;   
+}
+
+.service__description {
+    width: 173px;
+height: 174px;
+color: #6b6b6b;
+font-family: "Museo Sans Cyrl 300", sans-serif;
+
+}
