@@ -246,49 +246,62 @@ h1 {
 }
 
 .service {
+    display: flex;
+    flex-direction: column;
     max-width: 275px;
     width: 100%;
-    padding: 0 55px 45px;
-    padding-top: 50px;
+    padding: 50px 55px 45px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.service:hover {
+    border: 1px solid #ee700e;
+}
+
+.service:hover .service__description {
+    color: #ee700e;
+    font-weight: bold;
+}
+
+.service:hover .services__link {
+    opacity: 1;
 }
 
 .service__logo {
     width: 41px;
     height: 40px;
+    flex: 0 0;
 }
 
 .service__description {
     width: 173px;
-    height: 215px;
     color: #6b6b6b;
     font-family: "Museo Sans Cyrl 300", sans-serif;
-}
-
-.services__service:hover {
-    display: block;
-    padding: 40px;
-    border: 1px solid #ee700e;
-    text-decoration: none;
+    padding-top: 42px;
+    transition: 0.3s;
+    flex: 1 1;
 }
 
 .services__link {
-    width: 78px;
-    height: 15px;
+    display: inline-block;
+    flex: 0 0;
     font-family: "Museo Sans Cyrl 300", sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 22px;
     color: #6b6b6b;
+    opacity: 0;
+    transition: 0.3s;
+    padding-top: 15px;
+}
+
+.services__link::after {
+    content: '\2192';
+    padding-left: 11px;
 }
 
 .services__link:hover {
-    display: inline-block;
-    padding-right: 30px;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 22px;
     color: #ee700e;
-    text-transform: lowercase;
-    text-decoration: none;
-    position: relative;
+    text-decoration: underline;
 }
