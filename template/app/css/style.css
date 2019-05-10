@@ -238,6 +238,10 @@ h1 {
     font-size: 36px;
 }
 
+.section__title_white {
+    color: #ffffff;
+}
+
 .services {
     display: flex;
     justify-content: center;
@@ -304,4 +308,99 @@ h1 {
 .services__link:hover {
     color: #ee700e;
     text-decoration: underline;
+}
+
+.news-section {
+    background: url(../img/news-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.news {
+    display: flex;
+    padding-top: 85px;
+    justify-content: space-between;
+}
+
+.news-card {
+    padding: 80px 50px;
+    max-width: 340px;
+    width: 100%;
+    color: #ffffff;
+}
+
+.news-card__date {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.news-card__day {
+    font-family: "Museo Sans Cyrl 900", sans-serif;
+    font-size: 24px;
+}
+
+.news-card__month,
+.news-card__year {
+    font-family: "Museo Sans Cyrl 500", sans-serif;
+    padding-top: 10px;
+}
+
+.news-card__title {
+    font-family: "Museo Sans Cyrl 700", sans-serif;
+    font-size: 20px;
+}
+
+.news-card__title::after {
+    content: "";
+    display: block;
+    border-bottom: 1px #ee7c0e solid;
+    width: 25px;
+    padding-top: 35px;
+}
+
+.news-card__buttons {
+    padding-top: 45px;
+}
+
+.news-card__btn,
+.news-card__read-btn {
+    border: 1px #ee700e solid;
+    border-radius: 3px;
+    padding: 12px 16px;
+    color: #ee700e;
+    margin-left: 14px;
+}
+
+.news-card__btn_orange {
+    background-color: #ee700e;
+}
+
+.news-card__read-btn:hover {
+    color: white;
+    background-color:#ee700e;
+}
+
+.news-card_white {
+    color: black;
+    background-color: #ffffff;
+}
+
+.news-card__show-all-container {
+    display:flex;
+    justify-content: flex-end;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.news-card__show-all {
+    border: 1px #ee700e solid;
+    border-radius: 3px;
+    padding: 12px 16px;
+   background-color: #ee700e;
+    color: white;
+}
+
+.news-card__show-all:hover {
+    background-color: white;
+    color: #ee700e;
 }
